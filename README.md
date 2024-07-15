@@ -4,16 +4,16 @@ ROS Package for Material Detection using YOLOv10 and ViT
 
 ## PREREQUISITES
 
-*Python3
-*Ultralytics
+* Python3
+* Ultralytics
   ```
   pip install ultralytics
   ```
-*Transformers
+* Transformers
   ```
   pip install transformers
   ```
-*Pillow
+* Pillow
   ```
   pip install pillow
   # pip install --upgrade pillow
