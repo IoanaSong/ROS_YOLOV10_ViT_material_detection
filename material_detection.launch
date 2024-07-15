@@ -1,0 +1,5 @@
+<launch>
+    <node name= "yolo_vit_mat_detector" pkg="vit_inference" type="yolo_vit_mat_detector.py" output="screen"></node>
+    <!-- <node name= "webcam_sub" pkg="vit_inference" type="webcam_sub.py" output="screen"></node> -->
+    <node name= "webcam_pub" pkg="vit_inference" type="webcam_pub.py" output="screen"></node> 
+</launch>
