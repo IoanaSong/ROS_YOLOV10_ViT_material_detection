@@ -40,7 +40,7 @@ class YoloVitMaterialDetector:
         # self.vit_processor = ViTImageProcessor.from_pretrained('vit-MINC-2500')
         self.vit_processor = processor
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback) # TODO check which subscriber is camera for '/camera/image_raw'
-        self.result_pub = rospy.Publisher('vit_inference/results', MaterialDetected, queue_size=10)  #TODO subscribe to this
+        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10)  #TODO subscribe to this
         print("Initialized Detector")
 
     def image_callback(self, msg):
@@ -55,7 +55,7 @@ class YoloVitMaterialDetector:
         # YOLO detection
         print("YOLO detection starting")
 
-        results = self.yolo_model(cv_image)
+        results = self.yolo_model(cv_image) 
         
         for result in results:
             boxes = result.boxes.xyxy.cpu().numpy()
@@ -64,15 +64,14 @@ class YoloVitMaterialDetector:
                 crop = cv_image[y1:y2, x1:x2]
                 
                 # Vision Transformer inference
-
                 print("ViT inference starting")
                 inputs = self.vit_processor(images=crop, return_tensors="pt")
                 outputs = self.vit_model(**inputs)
                 predicted_class = outputs.logits.argmax(-1).item()
                 confidence = outputs.logit.softmax(-1).max().item()
 
-                # Create and publish materialdetected result as a message
-                print("Creating and publishing material detected results")
+                # Saving values relevant about material detected and class
+                print("Saving material detected results of a box")
                 det_msg = MaterialDetected()
                 det_msg.header = msg.header
                 det_msg.object_class = result.names[int(result.boxes.cls[0])]
@@ -82,12 +81,18 @@ class YoloVitMaterialDetector:
                 det_msg.width = x2-x1
                 det_msg.height = y2-y1
                 det_msg.material = str(predicted_class)
-                
+
                 # Draw bounding box and label
                 print("DRawing bounding box and label")
                 cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 cv2.putText(cv_image, f"Class: {predicted_class}", (x1, y1-10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+
+        # Publish material detected 
+        try:   
+            self.result_pub.publish(self.bridge.cv2_to_imgmsg(result, "mono8"))
+        except CvBridgeError as e:
+            rospy.logerr(e)
 
         cv2.imshow("Material Detection", cv_image)
         cv2.waitKey(1)

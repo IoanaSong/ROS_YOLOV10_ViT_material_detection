@@ -42,7 +42,7 @@ def receive_message():
   rospy.init_node('video_sub_py', anonymous=True)
    
   # Node is subscribing to the video_frames topic
-  rospy.Subscriber('original_camera', Image, callback)
+  rospy.Subscriber('/camera/image_raw', Image, callback)
  
   # spin() simply keeps python from exiting until this node is stopped
   rospy.spin()
