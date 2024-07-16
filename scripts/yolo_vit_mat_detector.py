@@ -3,7 +3,7 @@
 import rospy
 import cv2
 from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
+from cv_bridge import CvBridge, CvBridgeError
 from ultralytics import YOLO
 from transformers import ViTForImageClassification, ViTImageProcessor
 from transformers import AutoImageProcessor, AutoModelForImageClassification
@@ -47,7 +47,7 @@ class YoloVitMaterialDetector:
 
         print("STARTED Image callback")
         try:
-            cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+            cv_image = self.bridge.imgmsg_to_cv2(msg, "8UC3")
         except CvBridgeError as e:
             rospy.logerr(e)
             return
@@ -68,7 +68,7 @@ class YoloVitMaterialDetector:
                 inputs = self.vit_processor(images=crop, return_tensors="pt")
                 outputs = self.vit_model(**inputs)
                 predicted_class = outputs.logits.argmax(-1).item()
-                confidence = outputs.logit.softmax(-1).max().item()
+                confidence = outputs.logits.softmax(-1).max().item()
 
                 # Saving values relevant about material detected and class
                 print("Saving material detected results of a box")
@@ -89,15 +89,15 @@ class YoloVitMaterialDetector:
                             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
 
         # Publish material detected 
-        try:   
-            self.result_pub.publish(self.bridge.cv2_to_imgmsg(result, "mono8"))
-        except CvBridgeError as e:
-            rospy.logerr(e)
+        # try:   
+        #     self.result_pub.publish(self.bridge.cv2_to_imgmsg(result, "8UC3"))
+        # except CvBridgeError as e:
+        #     rospy.logerr(e)
 
-        cv2.imshow("Material Detection", cv_image)
-        cv2.waitKey(1)
-        print("Material detected: "+ predicted_class)
-        print("COnfidence: "+ confidence)
+                cv2.imshow("Material Detection", cv_image)
+                cv2.waitKey(1)
+                print("Material detected: "+ str(predicted_class))
+                print("COnfidence: "+ str(confidence))
 
 if __name__ == '__main__':
     rospy.init_node('yolo_vit_mat_detector', anonymous=True)
