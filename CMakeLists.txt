@@ -88,6 +88,8 @@ add_message_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  sensor_msgs
+  #msg
 )
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -127,7 +129,7 @@ generate_messages(
 
 catkin_package(
   LIBRARIES vit_inference
-  CATKIN_DEPENDS cv_bridge rospy std_msgs message_runtime message_generation image_transport
+  CATKIN_DEPENDS cv_bridge rospy std_msgs message_runtime message_generation image_transport sensor_msgs
 )
 
 ###########
