@@ -34,9 +34,7 @@ class YoloVitMaterialDetector:
 
             # results = model("image.jpg")
             # results[0].show()
-        # self.vit_model = ViTForImageClassification.from_pretrained('vit-MINC-2500')
         self.vit_model = model
-        # self.vit_processor = ViTImageProcessor.from_pretrained('vit-MINC-2500')
         self.vit_processor = processor
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback) # TODO check which subscriber is camera for '/camera/image_raw'
         self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10)  #TODO subscribe to this
@@ -56,7 +54,6 @@ class YoloVitMaterialDetector:
             rospy.logerr(e)
             return
 
-
         # YOLO detection
         start_yolo = time.perf_counter()
         results = self.yolo_model(cv_image) 
@@ -71,7 +68,6 @@ class YoloVitMaterialDetector:
                 crop = cv_image[y1:y2, x1:x2]
                 end_preprocess = time.perf_counter()
 
-
                 # Vision Transformer inference
                 start_inference = time.perf_counter()   # timing ViT inference duration on each BB
                 inputs = self.vit_processor(images=crop, return_tensors="pt")
@@ -81,7 +77,6 @@ class YoloVitMaterialDetector:
                 end_inference = time.perf_counter()
                 
                 # Saving values relevant about material detected and class
-
                 message_time = time.perf_counter()
                 det_msg = MaterialDetected()
                 det_msg.header = msg.header
@@ -108,30 +103,22 @@ class YoloVitMaterialDetector:
                 vit_message_duration = (message_end_time - message_time) * 1000
                 vit_object_postprocess_duration = (end_postprocess - start_postprocess) *1000
 
-                # Print ViT speeds
-                # print(f"ViT speeds: """)
-                # print(f"ViT inference time: {vit_duration:.2f} ms")
-                # print(f"Material inference message time: {vit_message_duration:.2f} ms")
-
-
+        # Show processed image with detection when objects have been detected
         if len(results) > 0 and len(results[0].boxes) > 0:
             cv2.imshow("Material Detection", cv_image)
             cv2.waitKey(1)
+
             # Publish the image with detections
             img_msg = self.bridge.cv2_to_imgmsg(cv_image, "8UC3")
             self.result_image.publish(img_msg)
 
-            # print("Material detected: "+ str(predicted_class) + " "+ labels_materials[predicted_class] + " "+ det_msg.object_class)
             print(f"Material detected: {predicted_class} {self.labels_materials[predicted_class]} {det_msg.object_class}")
             print("Confidence of material detection: "+ str(confidence))
 
-
             end_total = time.perf_counter()
-
             yolo_duration = (end_yolo - start_yolo) * 1000
             total_duration = (end_total - start_total) * 1000
 
-            # Store timing information
             timing_info = {
                 'preprocess': preprocess_duration,
                 'yolo': yolo_duration,
@@ -160,11 +147,7 @@ class YoloVitMaterialDetector:
 
         else:
             print("No objects detected")
-            # predicted_class = -1
-            # det_msg.material = "unknown"
-        
-        
-                
+            
 
 if __name__ == '__main__':
     rospy.init_node('yolo_vit_mat_detector', anonymous=True)
