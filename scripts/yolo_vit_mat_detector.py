@@ -12,15 +12,9 @@ from vit_inference.msg import MaterialDetected
 #from ultralytics import RTDETR
 
 
-
 # Loading vision transformer model fine-tuned on the MINC2500 subset of the MINC dataset
 processor = AutoImageProcessor.from_pretrained("ioanasong/vit-MINC-2500")
 model = AutoModelForImageClassification.from_pretrained("ioanasong/vit-MINC-2500") 
-
-# labels_materials = ['brick', 'carpet','ceramic','fabric','foliage', 'food','glass','hair',
-#                     'leather','metal','mirror','other','painted','paper','plastic','polishedstone',
-#                     'skin','sky','stone','tile','wallpaper','water','wood']
-
 
 class YoloVitMaterialDetector:
     def __init__(self):
@@ -31,9 +25,6 @@ class YoloVitMaterialDetector:
         # self.yolo_model = YOLO('yolov10n.pt')  # "Suitable for extremely resource-constrained environments" for object-detection
         self.yolo_model = YOLO('yolov10s.pt')  # "Balances speed and accuracy" for object-detection
         # self.rtdetr_model = RTDETR("rtdetr-l.pt") # for OD
-
-            # results = model("image.jpg")
-            # results[0].show()
         self.vit_model = model
         self.vit_processor = processor
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback) # TODO check which subscriber is camera for '/camera/image_raw'
