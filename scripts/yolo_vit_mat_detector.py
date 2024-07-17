@@ -28,8 +28,8 @@ class YoloVitMaterialDetector:
         self.vit_model = model
         self.vit_processor = processor
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback)
-        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10) 
-        self.result_image = rospy.Publisher('vit_inference/image', Image, queue_size=10)
+        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=2) 
+        self.result_image = rospy.Publisher('vit_inference/image', Image, queue_size=2)
         self.timing_list = []
         self.max_timing_records = 100  # Store last 100 timing records
         print("Initialized Detector")
@@ -40,7 +40,8 @@ class YoloVitMaterialDetector:
 
         print("Started Image callback")
         try:
-            cv_image = self.bridge.imgmsg_to_cv2(msg, "8UC3")
+            # cv_image = self.bridge.imgmsg_to_cv2(msg, "8UC3")
+            cv_image = self.bridge.imgmsg_to_cv2(msg, "passthrough")
         except CvBridgeError as e:
             rospy.logerr(e)
             return
@@ -100,7 +101,10 @@ class YoloVitMaterialDetector:
             cv2.waitKey(1)
 
             # Publish the image with detections
-            img_msg = self.bridge.cv2_to_imgmsg(cv_image, "8UC3")
+            # img_msg = self.bridge.cv2_to_imgmsg(cv_image, "8UC3")
+            # img_msg = self.bridge.cv2_to_imgmsg(cv_image, "passthrough")
+            img_msg = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
+
             self.result_image.publish(img_msg)
 
             print(f"Material detected: {predicted_class} {self.labels_materials[predicted_class]} {det_msg.object_class}")
