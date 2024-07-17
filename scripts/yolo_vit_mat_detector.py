@@ -27,8 +27,8 @@ class YoloVitMaterialDetector:
         # self.rtdetr_model = RTDETR("rtdetr-l.pt") # for OD
         self.vit_model = model
         self.vit_processor = processor
-        self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback) # TODO check which subscriber is camera for '/camera/image_raw'
-        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10)  #TODO subscribe to this
+        self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback)
+        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10) 
         self.result_image = rospy.Publisher('vit_inference/image', Image, queue_size=10)
         self.timing_list = []
         self.max_timing_records = 100  # Store last 100 timing records
