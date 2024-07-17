@@ -41,9 +41,13 @@ class YoloVitMaterialDetector:
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback) # TODO check which subscriber is camera for '/camera/image_raw'
         self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10)  #TODO subscribe to this
         self.result_image = rospy.Publisher('vit_inference/image', Image, queue_size=10)
+        self.timing_list = []
+        self.max_timing_records = 100  # Store last 100 timing records
         print("Initialized Detector")
 
     def image_callback(self, msg):
+
+        start_total = time.perf_counter()
 
         print("Started Image callback")
         try:
@@ -52,8 +56,11 @@ class YoloVitMaterialDetector:
             rospy.logerr(e)
             return
 
+
         # YOLO detection
+        start_yolo = time.perf_counter()
         results = self.yolo_model(cv_image) 
+        end_yolo = time.perf_counter()
         
         for result in results:
             boxes = result.boxes.xyxy.cpu().numpy()
@@ -86,24 +93,25 @@ class YoloVitMaterialDetector:
                 det_msg.height = y2-y1
                 det_msg.material = self.labels_materials[predicted_class]
                 self.result_pub.publish(det_msg)
-
                 message_end_time = time.perf_counter()
-                vit_message_time = (message_end_time - message_time) * 1000 # message duration in milliseconds
-                print(f"Material inference message time: {vit_inference_time:.2f} ms")
 
                 # Draw bounding box and label
-
-                
+                start_postprocess = time.perf_counter()
                 cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 cv2.putText(cv_image, f"Class: {self.labels_materials[predicted_class]}", (x1, y1-10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+                end_postprocess = time.perf_counter()
                 
-                
+                # Calculate speeds in milliseconds
                 preprocess_duration = (end_preprocess - start_preprocess) * 1000
-                vit_inference_duration = (end_inference - start_inference) * 1000  # inference duration in milliseconds
+                vit_duration = (end_inference - start_inference) * 1000 
+                vit_message_duration = (message_end_time - message_time) * 1000
+                vit_object_postprocess_duration = (end_postprocess - start_postprocess) *1000
 
-
-                print(f"ViT inference time: {vit_inference_duration:.2f} ms")
+                # Print ViT speeds
+                # print(f"ViT speeds: """)
+                # print(f"ViT inference time: {vit_duration:.2f} ms")
+                # print(f"Material inference message time: {vit_message_duration:.2f} ms")
 
 
         if len(results) > 0 and len(results[0].boxes) > 0:
@@ -117,11 +125,45 @@ class YoloVitMaterialDetector:
             print(f"Material detected: {predicted_class} {self.labels_materials[predicted_class]} {det_msg.object_class}")
             print("Confidence of material detection: "+ str(confidence))
 
+
+            end_total = time.perf_counter()
+
+            yolo_duration = (end_yolo - start_yolo) * 1000
+            total_duration = (end_total - start_total) * 1000
+
+            # Store timing information
+            timing_info = {
+                'preprocess': preprocess_duration,
+                'yolo': yolo_duration,
+                'vit': vit_duration,
+                'message': vit_message_duration,
+                'postprocess': vit_object_postprocess_duration,
+                'total': total_duration
+            }
+            self.timing_list.append(timing_info)
+            if len(self.timing_list) > self.max_timing_records:
+                self.timing_list.pop(0)
+
+            avg_times = {k: sum(t[k] for t in self.timing_list) / len(self.timing_list) 
+                        for k in self.timing_list[0].keys()}
+            
+            print(f"Speed: {preprocess_duration:.1f}ms preprocess, {yolo_duration:.1f}ms YOLO, "
+                f"{vit_duration:.1f}ms ViT, {vit_message_duration:.1f}ms publish, "
+                f"{vit_object_postprocess_duration:.1f}ms postprocess per image at shape {cv_image.shape}",
+                f"{total_duration:.1f}ms total YOLO and ViT image frame processing")
+            
+            if len(self.timing_list) % 10 == 0:
+                print(f"Average Speed: {avg_times['preprocess']:.1f}ms preprocess, "
+                    f"{avg_times['yolo']:.1f}ms YOLO, {avg_times['vit']:.1f}ms ViT, "
+                    f"{avg_times['message']:.1f}ms publishing, {avg_times['postprocess']:.1f}ms postprocess, "
+                    f"{avg_times['total']:.1f}ms total")
+
         else:
             print("No objects detected")
             # predicted_class = -1
             # det_msg.material = "unknown"
-
+        
+        
                 
 
 if __name__ == '__main__':
