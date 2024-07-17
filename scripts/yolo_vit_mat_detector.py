@@ -28,8 +28,8 @@ class YoloVitMaterialDetector:
         self.vit_model = model
         self.vit_processor = processor
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback)
-        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=2) 
-        self.result_image = rospy.Publisher('vit_inference/image', Image, queue_size=2)
+        self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=1) 
+        self.result_image = rospy.Publisher('vit_inference/image', Image, queue_size=1)
         self.timing_list = []
         self.max_timing_records = 100  # Store last 100 timing records
         print("Initialized Detector")
@@ -98,6 +98,7 @@ class YoloVitMaterialDetector:
         # Show processed image with detection when objects have been detected
         if len(results) > 0 and len(results[0].boxes) > 0:
             cv2.imshow("Material Detection", cv_image)
+            cv2.imwrite('/home/kai/catkin_ws/src/vit_inference/results/images/image' + str(len(self.timing_list)) + '.png', cv_image)
             cv2.waitKey(1)
 
             # Publish the image with detections
