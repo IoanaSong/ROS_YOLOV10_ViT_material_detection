@@ -48,7 +48,7 @@ class YoloVitMaterialDetector:
         self.vit_processor = processor
         self.image_sub = rospy.Subscriber('/camera/image_raw', Image, self.image_callback) # TODO check which subscriber is camera for '/camera/image_raw'
         self.result_pub = rospy.Publisher('vit_inference/result', MaterialDetected, queue_size=10)  #TODO subscribe to this
-        self.result_image = rospy.Publisher('vit/inference/result', Image, queue_size=10)
+        self.result_image = rospy.Publisher('vit_inference/result', Image, queue_size=10)
         print("Initialized Detector")
 
     def image_callback(self, msg):
