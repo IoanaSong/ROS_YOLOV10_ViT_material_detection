@@ -103,6 +103,9 @@ class YoloVitMaterialDetector:
                     text_y = y2 - 5
 
                 cv2.putText(cv_image, text, (text_x, text_y), font, font_scale, color, thickness)
+
+                print(f"Material detected: {predicted_class} {self.labels_materials[predicted_class]} {det_msg.object_class}")
+                print("Confidence of material detection: "+ str(confidence))
                 
                 # cv2.putText(cv_image, f"Class: {self.labels_materials[predicted_class]}", (x1, y1-10),
                 #             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
@@ -124,11 +127,7 @@ class YoloVitMaterialDetector:
             # img_msg = self.bridge.cv2_to_imgmsg(cv_image, "8UC3")
             # img_msg = self.bridge.cv2_to_imgmsg(cv_image, "passthrough")
             img_msg = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
-
             self.result_image.publish(img_msg)
-
-            print(f"Material detected: {predicted_class} {self.labels_materials[predicted_class]} {det_msg.object_class}")
-            print("Confidence of material detection: "+ str(confidence))
 
             end_total = time.perf_counter()
             yolo_duration = (end_yolo - start_yolo) * 1000
