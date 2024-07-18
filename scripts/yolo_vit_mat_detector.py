@@ -85,8 +85,27 @@ class YoloVitMaterialDetector:
                 # Draw bounding box and label
                 start_postprocess = time.perf_counter()
                 cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                cv2.putText(cv_image, f"Class: {self.labels_materials[predicted_class]}", (x1, y1-10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+
+
+                text = f"Class: {self.labels_materials[predicted_class]}"
+                font = cv2.FONT_HERSHEY_SIMPLEX
+                font_scale = 0.9
+                color = (0, 255, 0)  # Green color
+                thickness = 2
+                (text_width, text_height), _ = cv2.getTextSize(text, font, font_scale, thickness)
+
+                text_x = x1 + 5  # 5 pixels from the left edge of the box
+                text_y = y1 + text_height + 5  # 5 pixels from the top edge of the box, plus the height of the text
+
+                if text_x + text_width > x2:
+                    text_x = x2 - text_width - 5
+                if text_y > y2:
+                    text_y = y2 - 5
+
+                cv2.putText(cv_image, text, (text_x, text_y), font, font_scale, color, thickness)
+                
+                # cv2.putText(cv_image, f"Class: {self.labels_materials[predicted_class]}", (x1, y1-10),
+                #             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
                 end_postprocess = time.perf_counter()
                 
                 # Calculate speeds in milliseconds
