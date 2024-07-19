@@ -12,6 +12,10 @@ from vit_inference.msg import MaterialDetected
 #from ultralytics import RTDETR
 
 
+import torch
+from torchinfo import summary
+from ptflops import get_model_complexity_info
+
 # Loading vision transformer model fine-tuned on the MINC2500 subset of the MINC dataset
 processor = AutoImageProcessor.from_pretrained("ioanasong/vit-MINC-2500")
 model = AutoModelForImageClassification.from_pretrained("ioanasong/vit-MINC-2500") 
@@ -33,6 +37,49 @@ class YoloVitMaterialDetector:
         self.timing_list = []
         self.max_timing_records = 100  # Store last 100 timing records
         print("Initialized Detector")
+        # self.calculate_combined_complexity()
+
+    # def calculate_combined_complexity(self):
+    #     try:
+    #         # YOLO complexity and parameters
+    #         yolo_macs, yolo_params = get_model_complexity_info(
+    #             self.yolo_model.model, 
+    #             (3, 640, 640),  # Adjust if your YOLO input size is different
+    #             as_strings=False,  # We want numbers, not strings
+    #             print_per_layer_stat=False,
+    #             verbose=False
+    #         )
+
+    #         # ViT complexity and parameters
+    #         vit_macs, vit_params = get_model_complexity_info(
+    #             self.vit_model, 
+    #             (3, 224, 224),  # Adjust if your ViT input size is different
+    #             as_strings=False,
+    #             print_per_layer_stat=False,
+    #             verbose=False
+    #         )
+
+    #         # Calculate total
+    #         total_macs = yolo_macs + vit_macs
+    #         total_params = yolo_params + vit_params
+
+    #         # Convert to more readable format
+    #         total_gflops = total_macs * 2 / 1e9  # Multiply by 2 to convert MACs to FLOPs
+    #         total_params_millions = total_params / 1e6
+
+    #         rospy.loginfo(f"Combined Model Complexity:")
+    #         rospy.loginfo(f"Total Computational Complexity: {total_gflops:.2f} GFLOPs")
+    #         rospy.loginfo(f"Total Parameters: {total_params_millions:.2f} Million")
+
+    #         # Individual model breakdowns
+    #         rospy.loginfo(f"YOLO Complexity: {yolo_macs * 2 / 1e9:.2f} GFLOPs")
+    #         rospy.loginfo(f"YOLO Parameters: {yolo_params / 1e6:.2f} Million")
+    #         rospy.loginfo(f"ViT Complexity: {vit_macs * 2 / 1e9:.2f} GFLOPs")
+    #         rospy.loginfo(f"ViT Parameters: {vit_params / 1e6:.2f} Million")
+
+    #     except Exception as e:
+    #         rospy.logerr(f"Error calculating combined complexity: {e}")
+
 
     def image_callback(self, msg):
 
