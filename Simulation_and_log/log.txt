@@ -1,0 +1,1009 @@
+Initialized Detector
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 247.5ms
+Speed: 2.4ms preprocess, 247.5ms inference, 0.9ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9562867879867554
+Material detected: 14 plastic person
+Confidence of material detection: 0.7107611894607544
+Speed: 0.0ms preprocess, 1679.7ms YOLO, 378.9ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 2615.4ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 229.2ms
+Speed: 1.3ms preprocess, 229.2ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9646506905555725
+Material detected: 14 plastic person
+Confidence of material detection: 0.7398029565811157
+Speed: 0.0ms preprocess, 231.3ms YOLO, 345.1ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 967.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 cell phone, 210.4ms
+Speed: 0.9ms preprocess, 210.4ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9480751752853394
+Material detected: 14 plastic person
+Confidence of material detection: 0.9379851222038269
+Speed: 0.0ms preprocess, 212.0ms YOLO, 361.0ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 970.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 209.3ms
+Speed: 0.9ms preprocess, 209.3ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9319313764572144
+Material detected: 14 plastic person
+Confidence of material detection: 0.6770692467689514
+Speed: 0.0ms preprocess, 210.9ms YOLO, 344.1ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 929.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 209.1ms
+Speed: 0.8ms preprocess, 209.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.945948600769043
+Speed: 0.0ms preprocess, 210.6ms YOLO, 359.0ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 582.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 211.4ms
+Speed: 0.9ms preprocess, 211.4ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9588730931282043
+Material detected: 14 plastic person
+Confidence of material detection: 0.7643260359764099
+Speed: 0.0ms preprocess, 213.0ms YOLO, 344.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 916.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 236.9ms
+Speed: 0.9ms preprocess, 236.9ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9072070717811584
+Material detected: 14 plastic person
+Confidence of material detection: 0.7330687046051025
+Speed: 0.0ms preprocess, 238.5ms YOLO, 343.2ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 938.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 233.1ms
+Speed: 2.1ms preprocess, 233.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9116479754447937
+Material detected: 14 plastic person
+Confidence of material detection: 0.7073758840560913
+Speed: 0.0ms preprocess, 236.1ms YOLO, 344.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 938.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 225.2ms
+Speed: 0.9ms preprocess, 225.2ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.8809584379196167
+Speed: 0.0ms preprocess, 226.8ms YOLO, 345.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 585.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 1 frisbee, 209.0ms
+Speed: 0.9ms preprocess, 209.0ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.8433268666267395
+Material detected: 14 plastic person
+Confidence of material detection: 0.6845099925994873
+Speed: 0.0ms preprocess, 210.6ms YOLO, 383.1ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 966.5ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 367.0ms YOLO, 354.9ms ViT, 0.1ms publishing, 0.1ms postprocess, 1041.1ms total
+Started Image callback
+
+0: 480x640 1 person, 212.4ms
+Speed: 0.9ms preprocess, 212.4ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.6154276728630066
+Speed: 0.0ms preprocess, 213.9ms YOLO, 343.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 571.0ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 217.3ms
+Speed: 1.5ms preprocess, 217.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 cup, 1 book, 215.5ms
+Speed: 2.4ms preprocess, 215.5ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.9650952816009521
+Material detected: 14 plastic book
+Confidence of material detection: 0.5655155181884766
+Speed: 0.0ms preprocess, 219.1ms YOLO, 344.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 922.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 book, 215.7ms
+Speed: 1.8ms preprocess, 215.7ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.8121482729911804
+Speed: 0.0ms preprocess, 218.7ms YOLO, 357.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 590.5ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 book, 215.9ms
+Speed: 2.5ms preprocess, 215.9ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.8919593095779419
+Speed: 0.0ms preprocess, 219.6ms YOLO, 344.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 578.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 book, 246.1ms
+Speed: 2.1ms preprocess, 246.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.8291779160499573
+Material detected: 14 plastic book
+Confidence of material detection: 0.9491065740585327
+Speed: 0.0ms preprocess, 249.3ms YOLO, 344.0ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 951.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 book, 248.6ms
+Speed: 2.4ms preprocess, 248.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.9551834464073181
+Speed: 0.0ms preprocess, 252.1ms YOLO, 344.2ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 610.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 2 books, 212.8ms
+Speed: 1.5ms preprocess, 212.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.523791491985321
+Material detected: 16 skin book
+Confidence of material detection: 0.24238991737365723
+Material detected: 14 plastic book
+Confidence of material detection: 0.9528936743736267
+Speed: 0.0ms preprocess, 215.2ms YOLO, 356.3ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1273.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 book, 209.1ms
+Speed: 0.9ms preprocess, 209.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 13 paper book
+Confidence of material detection: 0.6735363602638245
+Speed: 0.0ms preprocess, 210.7ms YOLO, 343.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 568.5ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 book, 218.0ms
+Speed: 2.1ms preprocess, 218.0ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 13 paper book
+Confidence of material detection: 0.5647534728050232
+Speed: 0.0ms preprocess, 221.3ms YOLO, 344.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 579.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 221.9ms
+Speed: 2.3ms preprocess, 221.9ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 215.1ms
+Speed: 2.0ms preprocess, 215.1ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 215.7ms
+Speed: 1.9ms preprocess, 215.7ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 cup, 215.2ms
+Speed: 1.9ms preprocess, 215.2ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic cup
+Confidence of material detection: 0.9753729104995728
+Speed: 0.0ms preprocess, 218.2ms YOLO, 344.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 575.8ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 295.4ms YOLO, 350.8ms ViT, 0.0ms publishing, 0.1ms postprocess, 881.6ms total
+Started Image callback
+
+0: 480x640 (no detections), 215.5ms
+Speed: 2.0ms preprocess, 215.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 215.4ms
+Speed: 1.6ms preprocess, 215.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 216.6ms
+Speed: 2.3ms preprocess, 216.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 216.1ms
+Speed: 1.8ms preprocess, 216.1ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 243.5ms
+Speed: 3.6ms preprocess, 243.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 214.3ms
+Speed: 1.5ms preprocess, 214.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 249.9ms
+Speed: 3.6ms preprocess, 249.9ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 216.2ms
+Speed: 1.8ms preprocess, 216.2ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 224.8ms
+Speed: 3.1ms preprocess, 224.8ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 236.4ms
+Speed: 1.5ms preprocess, 236.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 cell phone, 246.8ms
+Speed: 3.4ms preprocess, 246.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic cell phone
+Confidence of material detection: 0.9781332015991211
+Speed: 0.0ms preprocess, 251.5ms YOLO, 345.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 609.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 cell phone, 235.6ms
+Speed: 2.0ms preprocess, 235.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic cell phone
+Confidence of material detection: 0.9679685235023499
+Speed: 0.0ms preprocess, 238.4ms YOLO, 345.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 604.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 2 mouses, 215.9ms
+Speed: 2.6ms preprocess, 215.9ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic mouse
+Confidence of material detection: 0.9802656769752502
+Material detected: 14 plastic mouse
+Confidence of material detection: 0.9616564512252808
+Speed: 0.0ms preprocess, 219.7ms YOLO, 345.6ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 922.8ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 219.7ms
+Speed: 2.0ms preprocess, 219.7ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9901776909828186
+Speed: 0.0ms preprocess, 222.7ms YOLO, 345.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 580.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 216.3ms
+Speed: 2.2ms preprocess, 216.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9893366098403931
+Speed: 0.0ms preprocess, 219.7ms YOLO, 345.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 578.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 214.8ms
+Speed: 1.5ms preprocess, 214.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9894411563873291
+Speed: 0.0ms preprocess, 217.2ms YOLO, 343.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 573.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 249.6ms
+Speed: 1.8ms preprocess, 249.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9906941056251526
+Speed: 0.0ms preprocess, 252.7ms YOLO, 345.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 617.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 cell phone, 215.9ms
+Speed: 1.7ms preprocess, 215.9ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9911853671073914
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.958023190498352
+Speed: 0.0ms preprocess, 218.8ms YOLO, 343.2ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 920.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 216.6ms
+Speed: 2.4ms preprocess, 216.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.988555371761322
+Speed: 0.0ms preprocess, 220.2ms YOLO, 345.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 578.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 215.4ms
+Speed: 1.6ms preprocess, 215.4ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9891786575317383
+Speed: 0.0ms preprocess, 218.2ms YOLO, 345.1ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 576.0ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 272.9ms YOLO, 348.9ms ViT, 0.0ms publishing, 0.1ms postprocess, 806.5ms total
+Started Image callback
+
+0: 480x640 1 laptop, 1 cell phone, 216.1ms
+Speed: 2.7ms preprocess, 216.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9899506568908691
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9350273609161377
+Speed: 0.0ms preprocess, 219.9ms YOLO, 344.9ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 922.8ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 235.4ms
+Speed: 2.3ms preprocess, 235.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 248.6ms
+Speed: 3.4ms preprocess, 248.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 214.2ms
+Speed: 1.6ms preprocess, 214.2ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 223.5ms
+Speed: 3.4ms preprocess, 223.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 215.9ms
+Speed: 1.8ms preprocess, 215.9ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 245.4ms
+Speed: 4.2ms preprocess, 245.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 211.8ms
+Speed: 1.3ms preprocess, 211.8ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 laptop, 259.2ms
+Speed: 3.6ms preprocess, 259.2ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.6348050236701965
+Speed: 0.0ms preprocess, 264.0ms YOLO, 346.1ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 621.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 217.1ms
+Speed: 2.2ms preprocess, 217.1ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 223.8ms
+Speed: 3.5ms preprocess, 223.8ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 236.0ms
+Speed: 2.5ms preprocess, 236.0ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 213.3ms
+Speed: 1.3ms preprocess, 213.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 216.9ms
+Speed: 2.4ms preprocess, 216.9ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 226.1ms
+Speed: 3.0ms preprocess, 226.1ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 laptop, 247.0ms
+Speed: 2.1ms preprocess, 247.0ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 9 metal laptop
+Confidence of material detection: 0.6142476201057434
+Speed: 0.0ms preprocess, 250.2ms YOLO, 344.3ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 606.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 214.8ms
+Speed: 2.4ms preprocess, 214.8ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 215.6ms
+Speed: 2.0ms preprocess, 215.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 251.9ms
+Speed: 3.0ms preprocess, 251.9ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 249.6ms
+Speed: 2.1ms preprocess, 249.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 243.3ms
+Speed: 2.2ms preprocess, 243.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 242.4ms
+Speed: 1.6ms preprocess, 242.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 laptop, 304.1ms
+Speed: 3.3ms preprocess, 304.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 9 metal laptop
+Confidence of material detection: 0.46829140186309814
+Speed: 0.0ms preprocess, 308.7ms YOLO, 345.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 666.4ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 241.7ms
+Speed: 1.5ms preprocess, 241.7ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 255.5ms
+Speed: 2.2ms preprocess, 255.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 265.8ms
+Speed: 2.2ms preprocess, 265.8ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 254.5ms
+Speed: 2.2ms preprocess, 254.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 241.3ms
+Speed: 1.5ms preprocess, 241.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 bed, 1 tv, 248.0ms
+Speed: 3.6ms preprocess, 248.0ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 6 glass tv
+Confidence of material detection: 0.4156597852706909
+Material detected: 13 paper tv
+Confidence of material detection: 0.5367871522903442
+Speed: 0.0ms preprocess, 252.9ms YOLO, 346.0ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 956.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 cup, 1 tv, 1 laptop, 1 book, 252.2ms
+Speed: 2.3ms preprocess, 252.2ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9311428070068359
+Material detected: 13 paper laptop
+Confidence of material detection: 0.5862973928451538
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.884529709815979
+Material detected: 6 glass laptop
+Confidence of material detection: 0.5146428942680359
+Speed: 0.0ms preprocess, 255.5ms YOLO, 346.0ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1668.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 1 laptop, 1 book, 1 vase, 209.6ms
+Speed: 0.8ms preprocess, 209.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9642699956893921
+Material detected: 13 paper laptop
+Confidence of material detection: 0.7114368677139282
+Material detected: 6 glass laptop
+Confidence of material detection: 0.7893761992454529
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.6331327557563782
+Speed: 0.0ms preprocess, 211.2ms YOLO, 354.6ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1626.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 1 laptop, 1 book, 1 vase, 208.8ms
+Speed: 0.8ms preprocess, 208.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9358634948730469
+Material detected: 13 paper laptop
+Confidence of material detection: 0.6864913105964661
+Material detected: 6 glass laptop
+Confidence of material detection: 0.6541013717651367
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.8543517589569092
+Speed: 0.0ms preprocess, 210.9ms YOLO, 345.0ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1626.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 keyboard, 1 book, 1 vase, 237.4ms
+Speed: 1.0ms preprocess, 237.4ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9670356512069702
+Material detected: 13 paper laptop
+Confidence of material detection: 0.6156964302062988
+Material detected: 6 glass laptop
+Confidence of material detection: 0.4334842562675476
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9727972745895386
+Speed: 0.0ms preprocess, 239.2ms YOLO, 344.9ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1641.5ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 1 laptop, 1 book, 1 vase, 208.9ms
+Speed: 0.8ms preprocess, 208.9ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9536792039871216
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.6229642033576965
+Material detected: 13 paper laptop
+Confidence of material detection: 0.4973618984222412
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.4771246314048767
+Speed: 0.0ms preprocess, 210.5ms YOLO, 352.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1644.8ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 265.2ms YOLO, 348.4ms ViT, 0.0ms publishing, 0.1ms postprocess, 904.4ms total
+Started Image callback
+
+0: 480x640 1 laptop, 1 book, 1 vase, 212.1ms
+Speed: 0.9ms preprocess, 212.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.7937011122703552
+Material detected: 13 paper laptop
+Confidence of material detection: 0.771831750869751
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.6563234925270081
+Speed: 0.0ms preprocess, 214.4ms YOLO, 345.0ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1271.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 book, 1 vase, 210.5ms
+Speed: 0.9ms preprocess, 210.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.8006278872489929
+Material detected: 6 glass laptop
+Confidence of material detection: 0.5875334143638611
+Material detected: 13 paper laptop
+Confidence of material detection: 0.6187395453453064
+Speed: 0.0ms preprocess, 212.1ms YOLO, 344.8ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1275.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 book, 1 vase, 212.0ms
+Speed: 1.0ms preprocess, 212.0ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9425842761993408
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.41020265221595764
+Material detected: 13 paper laptop
+Confidence of material detection: 0.7405234575271606
+Speed: 0.0ms preprocess, 213.9ms YOLO, 354.0ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1279.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 1 laptop, 1 book, 1 vase, 212.6ms
+Speed: 0.9ms preprocess, 212.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.893575131893158
+Material detected: 13 paper laptop
+Confidence of material detection: 0.7036153674125671
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.7313520312309265
+Material detected: 6 glass laptop
+Confidence of material detection: 0.7908555269241333
+Speed: 0.0ms preprocess, 214.3ms YOLO, 344.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1630.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 book, 1 vase, 212.3ms
+Speed: 1.0ms preprocess, 212.3ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9340406656265259
+Material detected: 13 paper laptop
+Confidence of material detection: 0.8431024551391602
+Material detected: 6 glass laptop
+Confidence of material detection: 0.8057762980461121
+Speed: 0.0ms preprocess, 214.1ms YOLO, 344.7ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1269.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 1 laptop, 1 book, 219.5ms
+Speed: 0.9ms preprocess, 219.5ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.933565080165863
+Material detected: 13 paper laptop
+Confidence of material detection: 0.5767372846603394
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.8115953207015991
+Speed: 0.0ms preprocess, 221.1ms YOLO, 353.2ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1276.5ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 1 laptop, 1 book, 1 vase, 209.0ms
+Speed: 0.9ms preprocess, 209.0ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9453973174095154
+Material detected: 13 paper laptop
+Confidence of material detection: 0.7371429800987244
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.7083646655082703
+Material detected: 6 glass laptop
+Confidence of material detection: 0.6462633609771729
+Speed: 0.0ms preprocess, 210.6ms YOLO, 344.2ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1609.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 217.1ms
+Speed: 0.9ms preprocess, 217.1ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 laptop, 1 cell phone, 209.1ms
+Speed: 0.8ms preprocess, 209.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9789282083511353
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9311237335205078
+Speed: 0.0ms preprocess, 210.5ms YOLO, 345.0ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 912.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 2 mouses, 218.3ms
+Speed: 0.9ms preprocess, 218.3ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9782273769378662
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9467567205429077
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.42345353960990906
+Speed: 0.0ms preprocess, 219.9ms YOLO, 355.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1277.0ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 mouse, 209.5ms
+Speed: 2.3ms preprocess, 209.5ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9751415252685547
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.913581907749176
+Speed: 0.0ms preprocess, 213.0ms YOLO, 353.9ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 923.6ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 255.1ms YOLO, 348.5ms ViT, 0.0ms publishing, 0.1ms postprocess, 978.0ms total
+Started Image callback
+
+0: 480x640 1 laptop, 1 cell phone, 209.4ms
+Speed: 0.9ms preprocess, 209.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9781299829483032
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.6701367497444153
+Speed: 0.0ms preprocess, 211.0ms YOLO, 355.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 924.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 cell phone, 209.0ms
+Speed: 0.8ms preprocess, 209.0ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9775958061218262
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.59592205286026
+Speed: 0.0ms preprocess, 210.6ms YOLO, 345.2ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 914.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 218.7ms
+Speed: 1.5ms preprocess, 218.7ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9706761837005615
+Speed: 0.0ms preprocess, 221.0ms YOLO, 344.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 577.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 210.6ms
+Speed: 0.9ms preprocess, 210.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9733911752700806
+Speed: 0.0ms preprocess, 212.2ms YOLO, 353.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 577.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 212.5ms
+Speed: 0.9ms preprocess, 212.5ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9778591990470886
+Speed: 0.0ms preprocess, 214.1ms YOLO, 343.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 569.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 1 cell phone, 212.1ms
+Speed: 0.9ms preprocess, 212.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9775559306144714
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9212549924850464
+Speed: 0.0ms preprocess, 213.7ms YOLO, 344.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 926.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 laptop, 211.8ms
+Speed: 0.9ms preprocess, 211.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9792991280555725
+Speed: 0.0ms preprocess, 213.4ms YOLO, 353.4ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 578.8ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 tv, 2 laptops, 1 keyboard, 211.8ms
+Speed: 0.9ms preprocess, 211.8ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9863178730010986
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.9768224954605103
+Material detected: 19 tile laptop
+Confidence of material detection: 0.37874460220336914
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.21908847987651825
+Speed: 0.0ms preprocess, 213.4ms YOLO, 344.3ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1625.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 sink, 222.3ms
+Speed: 0.9ms preprocess, 222.3ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 21 water sink
+Confidence of material detection: 0.5530516505241394
+Speed: 0.0ms preprocess, 223.9ms YOLO, 343.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 579.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 210.9ms
+Speed: 0.9ms preprocess, 210.9ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.8611428737640381
+Speed: 0.0ms preprocess, 212.5ms YOLO, 346.8ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 576.8ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 248.3ms YOLO, 348.3ms ViT, 0.0ms publishing, 0.1ms postprocess, 945.9ms total
+Started Image callback
+
+0: 480x640 1 person, 209.3ms
+Speed: 0.9ms preprocess, 209.3ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9080567955970764
+Speed: 0.0ms preprocess, 210.9ms YOLO, 344.3ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 568.8ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 211.4ms
+Speed: 0.9ms preprocess, 211.4ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9505306482315063
+Speed: 0.0ms preprocess, 213.0ms YOLO, 376.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 603.4ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 211.9ms
+Speed: 0.9ms preprocess, 211.9ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9604499340057373
+Speed: 0.0ms preprocess, 213.5ms YOLO, 342.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 569.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 211.8ms
+Speed: 0.9ms preprocess, 211.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.8998682498931885
+Speed: 0.0ms preprocess, 213.4ms YOLO, 353.2ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 580.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 211.7ms
+Speed: 0.9ms preprocess, 211.7ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.942216157913208
+Speed: 0.0ms preprocess, 213.4ms YOLO, 344.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 571.0ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 218.3ms
+Speed: 1.0ms preprocess, 218.3ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9573466181755066
+Speed: 0.0ms preprocess, 220.0ms YOLO, 344.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 577.9ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 212.1ms
+Speed: 0.9ms preprocess, 212.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9559084177017212
+Speed: 0.0ms preprocess, 213.7ms YOLO, 351.9ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 586.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 210.6ms
+Speed: 0.9ms preprocess, 210.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9473445415496826
+Speed: 0.0ms preprocess, 212.2ms YOLO, 344.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 570.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 230.1ms
+Speed: 3.0ms preprocess, 230.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9384966492652893
+Speed: 0.0ms preprocess, 234.3ms YOLO, 342.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 590.4ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 245.7ms
+Speed: 3.6ms preprocess, 245.7ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9555175304412842
+Speed: 0.0ms preprocess, 250.5ms YOLO, 344.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 608.5ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 244.2ms YOLO, 348.4ms ViT, 0.0ms publishing, 0.1ms postprocess, 894.0ms total
+Started Image callback
+
+0: 480x640 1 person, 224.2ms
+Speed: 2.2ms preprocess, 224.2ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9364874362945557
+Speed: 0.0ms preprocess, 227.4ms YOLO, 344.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 585.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 247.5ms
+Speed: 3.6ms preprocess, 247.5ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.9418427348136902
+Speed: 0.0ms preprocess, 252.3ms YOLO, 344.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 610.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 person, 233.6ms
+Speed: 1.7ms preprocess, 233.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 16 skin person
+Confidence of material detection: 0.8754618167877197
+Speed: 0.0ms preprocess, 236.4ms YOLO, 345.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 594.5ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 (no detections), 246.4ms
+Speed: 3.7ms preprocess, 246.4ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 (no detections), 238.5ms
+Speed: 1.9ms preprocess, 238.5ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+No objects detected
+Started Image callback
+
+0: 480x640 1 bottle, 1 laptop, 1 book, 227.6ms
+Speed: 3.7ms preprocess, 227.6ms inference, 0.1ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic book
+Confidence of material detection: 0.9227727651596069
+Material detected: 6 glass book
+Confidence of material detection: 0.4112366735935211
+Material detected: 14 plastic book
+Confidence of material detection: 0.9862924814224243
+Speed: 0.0ms preprocess, 232.4ms YOLO, 355.6ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1290.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 cup, 1 laptop, 1 book, 208.8ms
+Speed: 1.1ms preprocess, 208.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.29392075538635254
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.8491557240486145
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.8822470903396606
+Material detected: 14 plastic laptop
+Confidence of material detection: 0.8611928820610046
+Speed: 0.0ms preprocess, 210.6ms YOLO, 344.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1619.6ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 219.2ms
+Speed: 1.3ms preprocess, 219.2ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9864034652709961
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.8412714004516602
+Speed: 0.0ms preprocess, 221.4ms YOLO, 342.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 922.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 2 bottles, 1 bowl, 219.7ms
+Speed: 0.9ms preprocess, 219.7ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9735378623008728
+Material detected: 7 hair bottle
+Confidence of material detection: 0.4201549291610718
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.7390261888504028
+Speed: 0.0ms preprocess, 221.4ms YOLO, 355.8ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1281.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 2 books, 211.6ms
+Speed: 0.9ms preprocess, 211.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9723745584487915
+Material detected: 13 paper bottle
+Confidence of material detection: 0.5187856554985046
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.4767262637615204
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.3185633718967438
+Speed: 0.0ms preprocess, 213.3ms YOLO, 345.4ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1612.2ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 3 books, 212.6ms
+Speed: 0.9ms preprocess, 212.6ms inference, 0.7ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9691238403320312
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.7209053039550781
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.8793867230415344
+Material detected: 3 fabric bottle
+Confidence of material detection: 0.2800372838973999
+Material detected: 11 other bottle
+Confidence of material detection: 0.2153070718050003
+Speed: 0.0ms preprocess, 214.8ms YOLO, 347.5ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1982.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 3 books, 209.1ms
+Speed: 0.9ms preprocess, 209.1ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9819363951683044
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6377385258674622
+Material detected: 11 other bottle
+Confidence of material detection: 0.6163849830627441
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.4946247339248657
+Material detected: 13 paper bottle
+Confidence of material detection: 0.6133842468261719
+Speed: 0.0ms preprocess, 210.7ms YOLO, 344.8ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1964.4ms total YOLO and ViT image frame processing
+Average Speed: 0.0ms preprocess, 241.7ms YOLO, 348.2ms ViT, 0.0ms publishing, 0.1ms postprocess, 938.0ms total
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 4 books, 210.3ms
+Speed: 0.9ms preprocess, 210.3ms inference, 0.6ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9665731191635132
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.8181232810020447
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6691852807998657
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6455179452896118
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.7095802426338196
+Material detected: 3 fabric bottle
+Confidence of material detection: 0.32909730076789856
+Speed: 0.0ms preprocess, 214.0ms YOLO, 343.8ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 2315.7ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 4 books, 219.8ms
+Speed: 0.9ms preprocess, 219.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9772982001304626
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6896294355392456
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.7805272340774536
+Material detected: 13 paper bottle
+Confidence of material detection: 0.8670005202293396
+Material detected: 11 other bottle
+Confidence of material detection: 0.2793961465358734
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6043468713760376
+Speed: 0.0ms preprocess, 221.5ms YOLO, 355.1ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 2331.4ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 3 books, 209.8ms
+Speed: 0.9ms preprocess, 209.8ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9497014284133911
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.7598698139190674
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.7358991503715515
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6093495488166809
+Material detected: 13 paper bottle
+Confidence of material detection: 0.5900207757949829
+Speed: 0.0ms preprocess, 211.4ms YOLO, 362.7ms ViT, 0.0ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 2001.5ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 2 books, 227.0ms
+Speed: 0.9ms preprocess, 227.0ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9401968121528625
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.8460691571235657
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6888718605041504
+Material detected: 13 paper bottle
+Confidence of material detection: 0.9412649869918823
+Speed: 0.0ms preprocess, 228.7ms YOLO, 345.6ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1637.3ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 3 books, 227.7ms
+Speed: 1.0ms preprocess, 227.7ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9328131675720215
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.6747280955314636
+Material detected: 11 other bottle
+Confidence of material detection: 0.2631291449069977
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.8120719194412231
+Material detected: 13 paper bottle
+Confidence of material detection: 0.758468747138977
+Speed: 0.0ms preprocess, 229.4ms YOLO, 351.1ms ViT, 0.1ms publish, 0.1ms postprocess per image at shape (480, 640, 3) 1988.1ms total YOLO and ViT image frame processing
+Started Image callback
+
+0: 480x640 1 bottle, 1 bowl, 1 book, 232.6ms
+Speed: 1.1ms preprocess, 232.6ms inference, 0.2ms postprocess per image at shape (1, 3, 480, 640)
+Material detected: 14 plastic bottle
+Confidence of material detection: 0.9712226986885071
