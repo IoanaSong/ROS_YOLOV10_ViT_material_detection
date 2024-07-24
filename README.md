@@ -15,47 +15,47 @@ This ROS package integrates YOLO object detection with Vision Transformer (ViT) 
 ## Installation
 
 1. **Clone the Repository**:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/your-forked-repo.git
    cd your-forked-repo
-   \`\`\`
+   ```
 
 2. **Install Dependencies**:
    Make sure you have the necessary ROS packages and Python libraries installed.
 
-   \`\`\`bash
+   ```bash
    sudo apt-get install ros-noetic-cv-bridge ros-noetic-sensor-msgs
-   pip install opencv-python-headless numpy ultralytics transformers
-   \`\`\`
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
 1. **Build the ROS Package**:
    Make sure your ROS workspace is set up correctly. Place the package in the `src` directory of your workspace and build it.
 
-   \`\`\`bash
-   cd ~/catkin_ws
+   ```bash
+   cd ~/name_of_your_ws
    catkin_make
    source devel/setup.bash
-   \`\`\`
+   ```
 
 2. **Run the Node**:
    Launch the ROS node that runs the YOLO-ViT material detector.
 
-   \`\`\`bash
-   rosrun your_package_name yolo_vit_mat_detector.py
-   \`\`\`
+   ```bash
+   roslaunch vit_inference material_detection.launch
+   ```
 
 ## Node Details
 
 ### Subscribed Topics
 
-- \`/camera/image_raw\` (\`sensor_msgs/Image\`): The raw image topic from the camera.
+- `/camera/image_raw` (`sensor_msgs/Image`): The raw image topic from the camera.
 
 ### Published Topics
 
-- \`vit_inference/result\` (\`vit_inference/MaterialDetected\`): The detected material information.
-- \`vit_inference/image\` (\`sensor_msgs/Image\`): The image with annotated detections.
+- `vit_inference/result` (`vit_inference/MaterialDetected`): The detected material information.
+- `vit_inference/image` (`sensor_msgs/Image`): The image with annotated detections.
 
 ## Code Overview
 
