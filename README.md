@@ -16,8 +16,8 @@ This ROS package integrates YOLO object detection with Vision Transformer (ViT) 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-forked-repo.git
-   cd your-forked-repo
+   git clone https://github.com/IoanaSong/ROS_YOLOV10_ViT_material_detection.git
+   cd ROS_YOLOV10_ViT_material_detection
    ```
 
 2. **Install Dependencies**:
