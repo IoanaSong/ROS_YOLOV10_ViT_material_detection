@@ -9,6 +9,7 @@ from ultralytics import YOLO
 from transformers import ViTForImageClassification, ViTImageProcessor
 from transformers import AutoImageProcessor, AutoModelForImageClassification
 from vit_inference.msg import MaterialDetected
+import numpy as np
 #from ultralytics import RTDETR
 
 
@@ -42,6 +43,7 @@ class YoloVitMaterialDetector:
         try:
             # cv_image = self.bridge.imgmsg_to_cv2(msg, "8UC3")
             cv_image = self.bridge.imgmsg_to_cv2(msg, "passthrough")
+            cv_image = np.array(cv_image, copy=True)
         except CvBridgeError as e:
             rospy.logerr(e)
             return
@@ -59,7 +61,7 @@ class YoloVitMaterialDetector:
                 x1, y1, x2, y2 = map(int, box[:4])
                 crop = cv_image[y1:y2, x1:x2]
                 end_preprocess = time.perf_counter()
-
+	
                 # Vision Transformer inference
                 start_inference = time.perf_counter()   # timing ViT inference duration on each BB
                 inputs = self.vit_processor(images=crop, return_tensors="pt")
