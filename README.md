@@ -73,8 +73,8 @@ The node prints timing information for various stages of the processing pipeline
 
 ## References
 
-- [YOLO by Ultralytics](https://github.com/ultralytics/yolov5)
-- [Vision Transformer by Hugging Face](https://huggingface.co/models?filter=vit)
+- [YOLO by Ultralytics](https://github.com/THU-MIG/yolov10)
+- [Vision Transformer by Hugging Face](https://huggingface.co/google/vit-base-patch16-224-in21k)
 
 ## License
 
